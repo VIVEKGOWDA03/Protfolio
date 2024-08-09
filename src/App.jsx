@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "./componets/Navbar";
 import Hero from "./componets/Hero";
-import About from "./componets/about";
 import Techologies from "./componets/Techologies";
 import Experience from "./componets/Experience";
 import Projects from "./componets/Projects";
 import Personaldata from "./componets/Personaldata";
+import About from "./componets/about";
 
 
 const App = () => {
