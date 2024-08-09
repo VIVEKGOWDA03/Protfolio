@@ -4,7 +4,7 @@ import Techologies from "./componets/Techologies";
 import Experience from "./componets/Experience";
 import Projects from "./componets/Projects";
 import Personaldata from "./componets/Personaldata";
-import About from "./componets/about";
+// import About from "./componets/about";
 
 
 const App = () => {
@@ -20,9 +20,9 @@ const App = () => {
             {" "}
             <Hero />
           </div>
-          <div className="px-6">
+          {/* <div className="px-6">
             <About />
-          </div>
+          </div> */}
           <div className="lg:px-5">
             {" "}
             <Techologies />
