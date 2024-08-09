@@ -1,7 +1,5 @@
-import React from "react";
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/pic1.webp";
-// import profilePic from "../assets/pic2.jpg";
 import { motion } from "framer-motion";
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },

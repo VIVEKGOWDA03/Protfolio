@@ -1,6 +1,5 @@
-import React from "react";
 import { CONTACT } from "../constants";
-import { animate, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 
 const Personaldata = () => {
   return (
