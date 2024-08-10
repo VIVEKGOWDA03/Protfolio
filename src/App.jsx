@@ -18,7 +18,7 @@ const App = () => {
       </div>
       <div className="container mx-auto py-8 px-5">
         <Navbar />
-        <div className="-mt-1  ml-5">
+        <div className="-mt-1  ml-8 absolute">
           {" "}
           <Home />
         </div>
