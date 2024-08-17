@@ -3,6 +3,103 @@ html {
   /* overflow: hidden; */
 }
 
+.typing-animation {
+  overflow: hidden; /* Ensures text stays within the container */
+  white-space: nowrap; /* Prevents text from wrapping */
+  display: inline-block; /* Ensures blinking effect is visible */
+  width: 15ch; /* Set the width to match the length of your text */
+  animation: typing 4s steps(20, end) infinite alternate, blink 1s step-end infinite;
+}
+
+.card {
+  /* Add your card styling here */
+  position: relative;
+  width: 300px; /* Example width */
+  height: 200px; /* Example height */
+  overflow: hidden; /* Ensures the circle doesn't overflow */
+}
+
+.circle {
+  /* Add your circle styling here */
+  position: absolute;
+  width: 100px; /* Example width */
+  height: 100px; /* Example height */
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Adjusts for the circle's size */
+  background: transparent; /* Initial background */
+  border-radius: 50%; /* Makes it a circle */
+  transition: all 0.5s ease; /* Smooth transition for hover */
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%; /* Initial rounded shape */
+  background: transparent; /* Initial background color */
+  transition: all 0.5s ease; /* Smooth transition for hover */
+}
+
+.card:hover .circle::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px; /* Changes shape */
+  background: var(--clr); /* Changes background color */
+  transition-delay: 0.5s; /* Delays the transition */
+}
+
+.logo {
+  position: relative;
+  width: 250px;
+  transition: 0.5s ease; /* Smooth transition for hover */
+  transition-delay: 0.5s; /* Delays the transition */
+}
+
+.card:hover .circle .logo {
+  transform: scale(0); /* Scales down to invisible */
+  transition-delay: 0s; /* Removes delay on hover */
+}
+
+.switch {
+  width: 80px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  padding: 5px;
+  cursor: pointer;
+  position: relative; 
+}
+
+.switch[data-isOn="true"] {
+  justify-content: flex-end;
+}
+
+.handle {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+.App {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  position: absolute;
+  width: 160px; /* Match the width of the switch */
+  height: 100px; /* Match the height of the switch */
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1; /* Ensure it overlaps the switch */
+  left: 0;
+  top: 0;
+}
+
 button {
   --purple: #db07d1;
   --pink: #f2056f;
