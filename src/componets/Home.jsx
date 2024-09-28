@@ -8,7 +8,7 @@ import api from "../assets/Techno/api1.gif";
 
 import "../styles.css";
 
-export default function Home() {
+export default function Home({label,labelClass}) {
   const [ref, bounds] = useMeasure(); // Removed scroll: true
   const [isHover, setIsHover] = useState(false);
   const [isPress, setIsPress] = useState(false);
@@ -70,10 +70,10 @@ export default function Home() {
           </motion.div>
           <motion.div
             variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }}
-            className="label flex gap-1 w-full justify-center items-center "
+            className="label w-full flex  gap-1  justify-center items-center "
           >
-            <p className="flex w-full ">Welcome Folks</p>
-            <img className="flex w-8 h-8 hover:opacity-0" src={hello} alt="hello"></img>
+            <p className={`flex min-w-fit text-[20px] ${labelClass}`}>{label}</p>
+            <img className="flex  w-8 h-8 hover:opacity-0" src={hello} alt="hello"></img>
           </motion.div>
         </motion.button>
       </div>

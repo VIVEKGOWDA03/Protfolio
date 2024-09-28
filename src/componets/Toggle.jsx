@@ -1,8 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles.css";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleSwitch } from '../Slice/Slice'; // Import the toggleSwitch action
 
-export default function Toggle({ isOn, toggleSwitch }) {
+export default function Toggle() {
+  const isOn = useSelector((state) => state.toggle.isOn);
+  const dispatch = useDispatch();
+
   return (
     <div className="App flex justify-start relative">
       <div className="switch" data-isOn={isOn}>
@@ -12,7 +17,7 @@ export default function Toggle({ isOn, toggleSwitch }) {
         className="checkbox"
         type="checkbox"
         checked={isOn}
-        onChange={toggleSwitch}
+        onChange={() => dispatch(toggleSwitch())}  // Dispatch the toggleSwitch action on change
       />
     </div>
   );

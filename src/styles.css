@@ -108,7 +108,7 @@ button {
   appearance: none;
   border: none;
   cursor: pointer;
-  background-color: #acc7ed;
+  /* background-color: #acc7ed; */
   color: #fff;
   border-radius: 60px;
   outline: none;
