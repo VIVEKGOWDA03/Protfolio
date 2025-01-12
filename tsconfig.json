@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@shadcn/*": ["src/@shadcn/*"]
+      },
+      "jsx": "react"
+    }
+  }
+  

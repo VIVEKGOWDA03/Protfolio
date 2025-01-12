@@ -29,12 +29,14 @@ const Myfamily = () => {
       {/* <div className="flex justify-start ">
         <Example/>
       </div> */}
-      <div className="flex justify-end sticky pt-5 pr-5 lg:pr-0">
+      {/* <div className="flex justify-end sticky pt-5 pr-5 lg:pr-0">
         <Toggle />
-      </div>
+      </div> */}
       <div className="container mx-auto py-8 px-5">
         <Navbar />
-        <div className={`${!isOn ? "bg-" : ""} hover:ml-[28px]`}>
+        <div
+          className={`${!isOn ? "bg-" : ""} hidden lg:block hover:ml-[28px]`}
+        >
           <Home
             label="Welcome Folks"
             labelClass={`${
@@ -42,6 +44,7 @@ const Myfamily = () => {
             }`}
           />
         </div>
+
         <Hero />
         <Aboutme />
         <Techologies />

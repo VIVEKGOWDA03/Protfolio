@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "vivek-portfolio-6ff17"
-  }
+    "default": "vivek-portfolio-6ff17",
+    "portfolio": "vivek-portfolio-6ff17"
+  },
+  "targets": {},
+  "etags": {}
 }
