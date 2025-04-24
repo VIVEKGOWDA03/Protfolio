@@ -22,14 +22,14 @@ const iconVariants = (duration) => ({
   },
 });
 
-const Technologies = () => {
+const Technologies = ({isOn}) => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div className={`border-b ${isOn ? "text-black" : "text-white"} border-neutral-800 pb-24`}>
       <motion.h1
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ x: -100, opacity: 0 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl flex"
+        className="my-20 text-center text-4xl flex font-bold font-mono"
       >
           <img src={tech1} alt="Tech1" className="w-10 h-10 flex object-contain" />
 

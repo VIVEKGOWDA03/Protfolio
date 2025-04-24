@@ -5,7 +5,9 @@ import { Provider } from "react-redux";
 import store from "./store/store.js"
 import App from "./App.jsx";
 import "./index.css";
-import Myfamily from "./componets/Myfamily.jsx";
+import Portfolilo from "./componets/Myfamily.jsx";
+import Test from "./componets/Test.jsx";
+import Example from "./componets/Example.jsx";
 
 
 
@@ -16,8 +18,16 @@ const routes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Myfamily/> 
+        element: <Portfolilo/> 
       },
+      {
+        path:"test",
+        element:<Test/>
+      },
+      {
+        path:"ex",
+        element:<Example/>
+      }
     
     ],
   },

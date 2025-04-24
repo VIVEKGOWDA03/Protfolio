@@ -13,7 +13,7 @@ const container = (delay) => ({
     transition: { duration: 0.5, delay: delay },
   },
 });
-const Hero = () => {
+const Hero = ({ isOn }) => {
   return (
     <div className="border-b min-w border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
@@ -27,19 +27,20 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 animate-blin  min-w-fit h-full animate-pulse  text-6xl font-bold  tracking-tighter lg:mt-16 lg:text-8xl"
+              className={`pb-16 animate-blin min-w-fit h-full animate-pulse ${
+                isOn ? "text-black" : "text-white"
+              } text-6xl font-bold tracking-tighter lg:mt-16 lg:text-8xl`}
             >
               {/* <div className="min-w-fit h-full rounded-full transition ease-in-out delay-150 bg-transparent hover:-translate-y-1 hover:scale-110  hover:bg-indigo-500  duration-300 ..."> */}
               Vivek Gowda
               {/* <Home/> */}
-
               {/* </div> */}
             </motion.h1>
             <motion.span
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className=" flex gap-2  bg-gradient-to-r from-pink-300 via-slate-500 to-purple-400 bg-clip-text text-3xl tracking-tighter text-transparent"
+              className=" flex gap-2  bg-gradient-to-r font-semibold from-pink-300 via-slate-500 to-purple-400 bg-clip-text text-3xl tracking-tighter text-transparent"
             >
               Software Developer
               <img className=" fle w-10 h-10" src={code} alt=""></img>
@@ -48,7 +49,9 @@ const Hero = () => {
               variants={container(0.8)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl text-justify  py-6 font-light tracking-tighter"
+              className={`my-2 max-w-xl font-semibold ${
+                isOn ? "text-black" : "text-white"
+              } text-justify  py-6  tracking-tighter`}
             >
               {" "}
               {HERO_CONTENT}

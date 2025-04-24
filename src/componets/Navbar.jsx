@@ -35,12 +35,12 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="min-w-fit h-full rounded-full transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300 ...">
+        {/* <div className="min-w-fit h-full rounded-full transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300 ...">
       <FaSquareXTwitter />
       </div>
         <div className="min-w-fit h-full rounded-full transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-red-700 duration-300 ...">
         <FaInstagram />
-      </div>
+      </div> */}
       </div>
     </div>
   );
