@@ -1,5 +1,5 @@
-import { Canvas } from "@react-three/fiber"
-import { motion } from "framer-motion-3d"
+import { Canvas } from "@react-three/fiber";
+import { motion } from "framer-motion-3d";
 
 export function Scene({ isHovered }) {
   return (
@@ -8,5 +8,5 @@ export function Scene({ isHovered }) {
         <motion.mesh variants={{ hover: { z: 1 } }} />
       </motion.group>
     </Canvas>
-  )
+  );
 }

@@ -48,7 +48,7 @@ export const PROJECTS = [
       "MongoDB",
       "Framer Motion",
       "render.com",
-      "shadcn ui"
+      "shadcn ui",
     ],
     navigate: "https://front-end-m91j.onrender.com",
   },
@@ -64,27 +64,36 @@ export const PROJECTS = [
       "Node.js",
       "Express.js",
       "MongoDB",
-      "daisy UI"
-
+      "daisy UI",
     ],
     navigate: "https://chatty-d3xz.onrender.com/",
   },
-  {
-    title: "Task Buddy",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.Designed and developed a task management application with a Google Login feature.Implemented real-time database updates for seamless task tracking.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    navigate: "",
-  },
   // {
-  //   title: "Portfolio Website",
-  //   image: portfolioimg,
+  //   title: "Task Buddy",
+  //   image: project2,
   //   description:
-  //     "A personal portfolio website showcasing projects, skills, experience, and contact information.",
-  //   technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
+  //     "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking. Designed and developed a task management application with a Google Login feature. Implemented real-time database updates for seamless task tracking.",
+  //   technologies: ["HTML", "CSS", "JavaScript"],
   //   navigate: "",
   // },
+  {
+    title: "Engineering Resource Management System (ERM)",
+    image: project2,
+    description:
+      "Developed a full-stack Engineering Resource Management web application to manage and monitor engineers, their allocations, and work progress. Implemented user authentication with role-based access (Manager & Engineer) using JWT and session storage for secure navigation. Built dynamic dashboards with charts and metrics to visualize engineer utilization and availability using Chart.js. Designed a fully responsive, mobile-friendly UI with Material UI and Tailwind CSS to ensure a clean and modern user experience. Deployed the application on Render, ensuring smooth backend-frontend integration and persistent MongoDB data storage.",
+    technologies: [
+      "React.js",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Material UI",
+      "Tailwind CSS",
+      "Chart.js",
+      "Render",
+    ],
+    navigate: "https://erm-kok7.onrender.com",
+  },
 ];
 
 export const CONTACT = {
