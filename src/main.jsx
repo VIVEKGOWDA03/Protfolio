@@ -2,33 +2,35 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import store from "./store/store.js"
+import store from "./store/store.js";
 import App from "./App.jsx";
 import "./index.css";
-import Portfolilo from "./componets/Myfamily.jsx";
+import Portfolilo from "./componets/Portfolio.jsx";
 import Test from "./componets/Test.jsx";
 import Example from "./componets/Example.jsx";
-
-
+import Test2 from "./componets/Test2.jsx";
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <App />,  
+    element: <App />,
     children: [
       {
         path: "/",
-        element: <Portfolilo/> 
+        element: <Portfolilo />,
       },
       {
-        path:"test",
-        element:<Test/>
+        path: "test",
+        element: <Test />,
       },
       {
-        path:"ex",
-        element:<Example/>
-      }
-    
+        path: "ex",
+        element: <Example />,
+      },
+      {
+        path: "ex1",
+        element: <Test2 />,
+      },
     ],
   },
 ]);
@@ -36,7 +38,6 @@ const routes = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Provider store={store}>
-
       <RouterProvider router={routes} />
     </Provider>
   </StrictMode>

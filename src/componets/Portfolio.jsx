@@ -10,7 +10,8 @@ import Toggle from "./Toggle";
 import Navbar from "./Navbar";
 import { useSelector } from "react-redux";
 import { TracingBeam } from "../components/ui/tracing-beam";
-const Myfamily = () => {
+import Switch from "./Switch";
+const Portfolilo = () => {
   const isOn = useSelector((state) => state.toggle.isOn);
 
   return (
@@ -29,7 +30,8 @@ const Myfamily = () => {
         </div>
       </div>
       <div className="flex justify-end sticky pt-5 pr-5 lg:pr-0">
-        <Toggle isOn={isOn} />
+        {/* <Toggle isOn={isOn} /> */}
+        <Switch isOn={isOn}/>
       </div>
       <div className="container mx-auto py-8 px-[10%]">
         <Navbar />
@@ -58,4 +60,4 @@ const Myfamily = () => {
   );
 };
 
-export default Myfamily;
+export default Portfolilo;
