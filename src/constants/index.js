@@ -3,16 +3,24 @@ import project01 from "../assets/projects/urbanStore.jpg";
 import portfolioimg from "../assets/projects/image.png";
 import project2 from "../assets/projects/taskBuddy.jpg";
 import project3 from "../assets/projects/chat.jpg";
-export const HERO_CONTENT = `I am a passionate full-stack developer with 1+ year of experience in building robust and scalable web applications. I specialize in front-end technologies like React.js, Redux, Framer Motion, and AngularJS, and have expertise in back-end development using Node.js and MongoDB. Additionally, I have worked with Cloudinary for image management, RTK Query for API handling, and WordPress for CMS-based projects. My goal is to leverage these skills to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+import project4 from "../assets/projects/AiBot.jpg";
+import creatr from "../assets/projects/creatr.png";
+import bnetLogo from "../assets/company/Bnet.jpg";
+import cmsLogo from "../assets/company/CMS.webp";
 
-export const ABOUT_TEXT = `
-Disciplined and motivated Software Developer with a structured approach to problem-solving and a passion for learning. Experienced in front-end and full-stack development, with expertise in React.js, Node.js, Express.js, Firebase, and MongoDB. Adept at working in Agile environments, collaborating with teams, and delivering scalable applications. Seeking an opportunity in a growth-oriented organization to enhance technical skills and contribute to innovative solutions. `;
+// export const HERO_CONTENT = `I am a passionate full-stack developer with 1.5+ year of experience in building robust and scalable web applications. I specialize in front-end technologies like React.js, Redux, Framer Motion, and AngularJS, and have expertise in back-end development using Node.js and MongoDB. Additionally, I have worked with Cloudinary for image management, RTK Query for API handling, and WordPress for CMS-based projects. My goal is to leverage these skills to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `UI Developer | Software Engineer | MERN Stack Developer | React.js, Next.js, Node.js, MongoDB | JavaScript (ES6+) | REST APIs | AWS Cloud | CI/CD | Performance Optimization | 2+ Years Experience`;
+
+// export const ABOUT_TEXT = `
+// Disciplined and motivated Software Developer with a structured approach to problem-solving and a passion for learning. Experienced in front-end and full-stack development, with expertise in React.js, Node.js, Express.js, Firebase, and MongoDB. Adept at working in Agile environments, collaborating with teams, and delivering scalable applications. Seeking an opportunity in a growth-oriented organization to enhance technical skills and contribute to innovative solutions. `;
+export const ABOUT_TEXT = `Software Engineer and UI Developer with 2+ years of experience in designing and developing scalable web applications. Proficient in frontend and backend technologies with a strong emphasis on performance optimization, reusable components, and API integration. Experienced in Agile environments, delivering efficient and maintainable solutions aligned with business requirements`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Full Stack Developer",
-    company: "Bnet Global Solutions pvt ltd.",
+    year: "Jan 2024 - Jul 2025",
+    role: "Software Developer",
+    company: "BNET Insurance Brokers Pvt Ltd.",
+    logo: bnetLogo,
     description: [
       "Developed and maintained responsive, user-friendly web interfaces for projects like Policy Fynder (React.js) and IMS (Insurance Management System) (Angular.js).",
       "Actively participated in Agile processes, including daily stand-up meetings, sprint planning, and retrospectives.",
@@ -25,16 +33,40 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: "2022-2023",
-    role: "Frontend Developer Intern",
-    company: "Florito pvt ltd",
+    year: "Aug 2025 - Present",
+    role: "UI Developer",
+    company: "CMS India Pvt Ltd",
+    logo: cmsLogo,
     description: [
-      "Developed and maintained the company website using HTML, CSS, JavaScript, and WordPress.",
+      "Working as a UI Developer on large-scale government applications for BBMP/GBA.",
+      "Contributed to the 'Online Bulk Multi-Unit Khata Integration' project.",
+      "Developed and maintained the 'Property GPs' application.",
+      "Focused on building responsive, accessible, and user-friendly interfaces.",
+      "Collaborated closely with backend teams and stakeholders.",
+      "Followed best practices in UI consistency and performance optimization.",
     ],
   },
 ];
 
 export const PROJECTS = [
+  {
+    title: "AI Creators Platform",
+    image: creatr,
+    description:
+      "Developed an AI-powered content creation platform using Next.js, TypeScript, and ConvexDB. Integrated Clerk for secure authentication, ImageKit for optimized media management, and Google Generative AI for intelligent content generation. The app features a clean and dynamic interface built with Tailwind CSS and shadcn/ui, offering a seamless user experience with real-time updates and dark mode support. Deployed on Vercel for fast performance and scalability.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "ConvexDB",
+      "Clerk",
+      "ImageKit",
+      "Google Generative AI",
+      "shadcn ui",
+      "Vercel",
+    ],
+    navigate: "https://content-creatr.vercel.app/",
+  },
   {
     title: "E-Commerce Website",
     image: project01,
@@ -54,7 +86,7 @@ export const PROJECTS = [
   },
   {
     title: "Chaty - Real-time Chat App",
-    image: project3, // Make sure to import the image
+    image: project3,
     description:
       "Chaty is a real-time chat application built using Socket.io for instant messaging. It supports user authentication, real-time messaging, and dynamic UI updates. The frontend is built with React.js and Tailwind CSS, while the backend uses Node.js, Express.js, and MongoDB for message storage.",
     technologies: [
@@ -93,6 +125,23 @@ export const PROJECTS = [
       "Render",
     ],
     navigate: "https://erm-kok7.onrender.com",
+  },
+  {
+    title: "AI Chat Bot",
+    image: project4,
+    description:
+      "A React application mimicking the core features of the Gemini AI interface. It includes a simulated OTP-based authentication system, a dashboard for managing chatrooms, and a real-time chat interface integrated with the Gemini API for dynamic AI responses. Features also include image uploads, infinite scroll for chat history, and a global dark mode.",
+    technologies: [
+      "React.js",
+      "Vite",
+      "Tailwind CSS",
+      "Zustand",
+      "React Hook Form",
+      "Zod",
+      "Gemini API",
+      "localStorage",
+    ],
+    navigate: "https://chat-room-ashen-six.vercel.app",
   },
 ];
 

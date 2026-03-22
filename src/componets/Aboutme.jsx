@@ -9,9 +9,9 @@ const Aboutme = ({ isOn }) => {
         isOn ? "text-black" : "text-white"
       } border-neutral-900 pb-4`}
     >
-      <h1 className="my-20 text-blac font-bold font-mono text-center text-4xl">
+      <h1 className="my-20 font-bold font-mono text-center text-4xl">
         {" "}
-        About <span className="ext-neutral-500"></span> me
+        About <span className="text-neutral-500"></span> me
       </h1>
       <div className="flex w-full justify-center items-center flex-col flex-wrap">
         <motion.div
@@ -30,7 +30,7 @@ const Aboutme = ({ isOn }) => {
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2"
         >
-          <div className="flex justify-center text-blac font-bold font-mono ">
+          <div className="flex justify-center font-bold font-mono ">
             <p className="my-2 text-left max-w-xl py-6">{ABOUT_TEXT}</p>
           </div>
         </motion.div>

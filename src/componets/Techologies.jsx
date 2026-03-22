@@ -1,13 +1,12 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb } from "react-icons/si";
-import { FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
 import { SiRedux, SiJira } from "react-icons/si";
 import { motion } from "framer-motion";
-import tech1 from "../assets/Techno/tech3.gif"; 
+import tech1 from "../assets/Techno/tech3.gif";
 import cloud from "../assets/Techno/cloud1.gif";
-import api from "../assets/Techno/api1.gif"; 
-
+import api from "../assets/Techno/api1.gif";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -22,17 +21,24 @@ const iconVariants = (duration) => ({
   },
 });
 
-const Technologies = ({isOn}) => {
+const Technologies = ({ isOn }) => {
   return (
-    <div className={`border-b ${isOn ? "text-black" : "text-white"} border-neutral-800 pb-24`}>
+    <div
+      className={`border-b ${
+        isOn ? "text-black" : "text-white"
+      } border-neutral-800 pb-24`}
+    >
       <motion.h1
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ x: -100, opacity: 0 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl flex font-bold font-mono"
+        className="my-20 text-center text-4xl flex justify-center items-center font-bold font-mono"
       >
-          <img src={tech1} alt="Tech1" className="w-10 h-10 flex object-contain" />
-
+        <img
+          src={tech1}
+          alt="Tech1"
+          className="w-10 h-10 flex object-contain mr-4"
+        />
         Technologies
       </motion.h1>
       <motion.div
@@ -41,6 +47,27 @@ const Technologies = ({isOn}) => {
         transition={{ duration: 1.5 }}
         className="flex flex-wrap items-center justify-center gap-4"
       >
+        <motion.div
+          variants={iconVariants(8)}
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaHtml5 className="text-7xl text-orange-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2)}
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaCss3Alt className="text-7xl text-purple-300" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(6)}
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaJsSquare className="text-yellow-400 text-7xl" />
+        </motion.div>
         <motion.div
           variants={iconVariants(2.5)}
           animate="animate"
@@ -62,20 +89,7 @@ const Technologies = ({isOn}) => {
         >
           <SiMongodb className="text-7xl text-green-500" />
         </motion.div>
-        <motion.div
-          variants={iconVariants(8)}
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaHtml5 className="text-7xl text-orange-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaCss3Alt className="text-7xl text-purple-300" />
-        </motion.div>
+
         <motion.div
           variants={iconVariants(6)}
           animate="animate"
@@ -104,14 +118,22 @@ const Technologies = ({isOn}) => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <img src={cloud} alt="Tech1" className="w-[72px] h-[72px] object-contain" />
+          <img
+            src={cloud}
+            alt="Tech1"
+            className="w-[72px] h-[72px] object-contain"
+          />
         </motion.div>
         <motion.div
           variants={iconVariants(4)}
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <img src={api} alt="Tech1" className="w-[72px] h-[72px] object-contain" />
+          <img
+            src={api}
+            alt="Tech1"
+            className="w-[72px] h-[72px] object-contain"
+          />
         </motion.div>
       </motion.div>
     </div>

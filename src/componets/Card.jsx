@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles.css";
-import profilePic from "../assets/pic3.gif";
+import profilePic from "../assets/vivek-img.jpg";
 
 
 const Card = () => {

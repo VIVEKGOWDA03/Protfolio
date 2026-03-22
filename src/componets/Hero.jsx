@@ -1,10 +1,12 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/pic3.gif";
+import profilePic from "../assets/vivek-img.jpg";
+
 // import profilePic from "../assets/pic1.webp";
 import { motion } from "framer-motion";
 import code from "../assets/code.gif";
 // import Home from "./Home";
 import "../styles.css";
+import { TextLoop } from "../components/ui/text-loop";
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: {
@@ -40,9 +42,21 @@ const Hero = ({ isOn }) => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className=" flex gap-2  bg-gradient-to-r font-semibold from-pink-300 via-slate-500 to-purple-400 bg-clip-text text-3xl tracking-tighter text-transparent"
+              className=" flex gap-2 font-mono text-s   bg-gradient-to-r font-semibold from-pink-300 via-slate-500 to-purple-400 bg-clip-text text-3xl tracking-tighter text-transparent"
             >
-              Software Developer
+              {/* Software Developer */}
+              <TextLoop className="!from-pink-300 via-slate-500 to-purple-400">
+                <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-400 bg-clip-text text-transparent">
+                  Software
+                </span>
+                <span className="bg-gradient-to-r from-purple-400 via-pink-300 to-slate-500 bg-clip-text text-transparent">
+                  Frontend
+                </span>
+                <span className="bg-gradient-to-r from-slate-500 via-purple-400 to-pink-300 bg-clip-text text-transparent">
+                  <span>&nbsp;Backend</span>
+                </span>
+              </TextLoop>
+              Developer
               <img className=" fle w-10 h-10" src={code} alt=""></img>
             </motion.span>
             <motion.p
@@ -64,7 +78,7 @@ const Hero = ({ isOn }) => {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className="rounded"
+              className="rounded-full w-[50%] h-[50%]"
               src={profilePic}
               alt=""
             ></motion.img>

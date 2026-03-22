@@ -9,6 +9,8 @@ import Portfolilo from "./componets/Portfolio.jsx";
 import Test from "./componets/Test.jsx";
 import Example from "./componets/Example.jsx";
 import Test2 from "./componets/Test2.jsx";
+import Projects from "./componets/Projects.jsx";
+// import { CRUD } from "./Pages/CRUD.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -24,6 +26,10 @@ const routes = createBrowserRouter([
         element: <Test />,
       },
       {
+        path: "projects",
+        element: <Projects />,
+      },
+      {
         path: "ex",
         element: <Example />,
       },
@@ -31,6 +37,10 @@ const routes = createBrowserRouter([
         path: "ex1",
         element: <Test2 />,
       },
+      //       {
+      //   path: "crud",
+      //   element: <CRUD />,
+      // },
     ],
   },
 ]);

@@ -6,7 +6,7 @@ import phone from "../assets/phone.gif";
 const Personaldata = ({ isOn }) => {
   return (
     <div
-      className={`boder-b  ${
+      className={`border-b ${
         isOn ? "text-black" : "text-white"
       } font-bold font-mono border-neutral-900 pb-20`}
     >
@@ -27,7 +27,7 @@ const Personaldata = ({ isOn }) => {
         >
           {CONTACT.address}
         </motion.p>
-        <motion.p className="my-4  gap-1 flex items-center justify-center w-full">
+        {/* <motion.p className="my-4  gap-1 flex items-center justify-center w-full">
           <img
             className={` ${
               isOn ? "bg-black rounded-md" : "text-white"
@@ -36,13 +36,13 @@ const Personaldata = ({ isOn }) => {
             alt=""
           ></img>
           {CONTACT.phoneNo}
-        </motion.p>
+        </motion.p> */}
         <motion.a
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ x: -100, opacity: 0 }}
           transition={{ duration: 1 }}
           href="#"
-          className="boder-b flex items-center justify-center w-full"
+          className="flex items-center justify-center w-full"
         >
           <img
             className={` ${

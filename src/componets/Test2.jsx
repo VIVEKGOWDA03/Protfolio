@@ -10,7 +10,7 @@ const Test2 = () => {
     const saved = sessionStorage.getItem("AllTask");
     if (saved) {
       setAlltask(JSON.parse(saved));
-      //   console.log(saved, "saved");
+      console.log(saved, "saved");
     }
     setHasLoaded(true);
   }, []);
@@ -31,7 +31,7 @@ const Test2 = () => {
     console.log(newTask);
     setAlltask((prevTasks) => [...prevTasks, newTask]);
 
-    console.log(newTask, "new");
+    // console.log(newTask, "new");
 
     setTitle("");
     setPriority("HIGH");

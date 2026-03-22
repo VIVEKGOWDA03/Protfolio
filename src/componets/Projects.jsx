@@ -73,13 +73,19 @@ const Projects = ({ isOn }) => {
                 )}
               </h6>
 
-              <p className="mb-4 text-neutral-400">{project.description}</p>
+              <p className={`mb-4 ${!isOn ? "text-neutral-400" : "text-neutral-700"}`}>
+                {project.description}
+              </p>
 
               <div className="flex flex-wrap gap-1">
                 {project.technologies.map((tech, i) => (
                   <span
                     key={i}
-                    className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-400"
+                    className={`rounded px-2 py-1 text-sm font-medium ${
+                      !isOn
+                        ? "bg-neutral-900 text-purple-400"
+                        : "bg-purple-100 text-purple-900"
+                    }`}
                   >
                     {tech}
                   </span>
